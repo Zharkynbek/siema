@@ -40,6 +40,7 @@ function closeModal() {
   refs.modal.classList.remove('is-open');
   refs.modalImg.src = '#';
 }
+
 function keyboardManipulation({ key }) {
   switch (key) {
     case gallery.length - 1 > activeIndex && 'ArrowRight':
@@ -67,7 +68,7 @@ function keyboardManipulation({ key }) {
 }
 
 const mySiema = new Siema();
-document.querySelector('.pre').addEventListener('click', () => mySiema.prev());
+document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
 document.querySelector('.next').addEventListener('click', () => mySiema.next());
 new Siema();
 
